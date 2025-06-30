@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premium Laptop Bag Survey</title>
+  <!-- Tailwind CSS CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
+    <h1 class="text-2xl font-bold mb-6 text-center">Premium Laptop Bag Survey</h1>
+    <form action="#" method="post" class="space-y-8">
+      <!-- A. Quick Profile -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">A. Quick Profile</legend>
+        <!-- Role -->
+        <label class="block">Which best describes your primary role?
+          <select name="role" class="mt-1 w-full border rounded p-2" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Designer / Creative professional</option>
+            <option>Engineer / Developer</option>
+            <option>Photographer / Videographer</option>
+            <option>Business executive</option>
+            <option>Student</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <!-- Frequency -->
+        <label class="block">How often do you carry a laptop or tablet outside your home/office?
+          <select name="carry_frequency" class="mt-1 w-full border rounded p-2" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Daily</option>
+            <option>Several times a week</option>
+            <option>Once a week</option>
+            <option>A few times a month</option>
+            <option>Rarely</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- B. Current‑Bag Pain Points -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">B. Current‑Bag Pain Points</legend>
+        <!-- Satisfaction -->
+        <label class="block">How satisfied are you with your current laptop bag overall?</label>
+        <div class="flex space-x-4 mt-1">
+          <label class="flex items-center space-x-1"><input type="radio" name="current_satisfaction" value="1" required><span>1</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="current_satisfaction" value="2"><span>2</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="current_satisfaction" value="3"><span>3</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="current_satisfaction" value="4"><span>4</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="current_satisfaction" value="5"><span>5</span></label>
+        </div>
+        <!-- Problems experienced -->
+        <label class="block">What problems have you experienced with laptop bags you’ve owned? <span class="italic text-sm">(Select all that apply)</span></label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Poor protection" class="mr-2">Poor protection against drops</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Water resistance" class="mr-2">Insufficient water resistance</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Thermal" class="mr-2">Overheating / no thermal insulation</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Organisation" class="mr-2">Awkward interior organisation</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Straps" class="mr-2">Uncomfortable straps</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Bulky" class="mr-2">Bulky or heavy design</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Style" class="mr-2">Style doesn’t match my professional look</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Materials" class="mr-2">Low‑quality materials</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Price" class="mr-2">Price too high for the quality</label>
+          <label class="flex items-center"><input type="checkbox" name="problems" value="Other" class="mr-2">Other</label>
+        </div>
+        <!-- Biggest deal‑breaker -->
+        <label class="block mt-4">Which ONE is the biggest deal‑breaker for you?
+          <select name="deal_breaker" class="mt-1 w-full border rounded p-2" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Poor protection against drops</option>
+            <option>Insufficient water resistance</option>
+            <option>Overheating / no thermal insulation</option>
+            <option>Awkward interior organisation</option>
+            <option>Uncomfortable straps</option>
+            <option>Bulky or heavy design</option>
+            <option>Style doesn’t match my professional look</option>
+            <option>Low‑quality materials</option>
+            <option>Price too high for the quality</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- C. Colour & Style Preferences -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">C. Colour & Style Preferences</legend>
+        <!-- Preferred colours -->
+        <label class="block">Which colour families would you <strong>actively choose</strong> for a professional laptop bag? <span class="italic text-sm">(Select up to three)</span></label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Black" class="mr-2">Classic black</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Charcoal" class="mr-2">Charcoal / dark grey</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Navy" class="mr-2">Navy</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Green" class="mr-2">Deep green</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Brown" class="mr-2">Brown / tan leather tone</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Burgundy" class="mr-2">Burgundy / wine</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Light" class="mr-2">Light neutral (beige, stone)</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Bold" class="mr-2">Bold accent (e.g., orange, teal)</label>
+          <label class="flex items-center"><input type="checkbox" name="colors" value="Limited" class="mr-2">Limited‑edition / seasonal colours</label>
+        </div>
+        <!-- Importance color variety -->
+        <label class="block mt-4">How important is it that a bag be available in multiple colour options?</label>
+        <div class="flex space-x-4 mt-1">
+          <label class="flex items-center space-x-1"><input type="radio" name="color_variety_importance" value="1" required><span>1</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="color_variety_importance" value="2"><span>2</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="color_variety_importance" value="3"><span>3</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="color_variety_importance" value="4"><span>4</span></label>
+          <label class="flex items-center space-x-1"><input type="radio" name="color_variety_importance" value="5"><span>5</span></label>
+        </div>
+      </fieldset>
+
+      <!-- D. Satisfaction & Must‑Have Features -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">D. Satisfaction & Must‑Have Features</legend>
+        <p class="mb-2">Rate the importance of each feature when deciding to buy a new laptop bag (1 = Not important, 5 = Essential).</p>
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead>
+              <tr>
+                <th class="text-left pr-4">Feature</th>
+                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Helper to generate rows -->
+              <!-- We'll list each feature row with radio inputs -->
+              <script>
+                const features = [
+                  'Shock‑absorbing padding',
+                  'Water resistance',
+                  'Thermal insulation',
+                  'Lockable compartments',
+                  'Organised interior pockets',
+                  'Lightweight materials',
+                  'Sustainable / plant‑based materials',
+                  'Minimal, executive aesthetics',
+                  'Warranty or repair service'
+                ];
+                document.addEventListener('DOMContentLoaded', () => {
+                  const tbody = document.querySelector('tbody');
+                  features.forEach((feat, idx) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td class="pr-4 py-1">${feat}</td>` +
+                      Array.from({length:5}, (_,i) => `<td class="text-center"><input type="radio" name="feat_${idx}" value="${i+1}" required></td>`).join('');
+                    tbody.appendChild(tr);
+                  });
+                });
+              </script>
+            </tbody>
+          </table>
+        </div>
+        <!-- Full protection definition -->
+        <label class="block mt-4">At what point would you feel your device is “fully protected”?
+          <textarea name="full_protection" rows="3" class="mt-1 w-full border rounded p-2" placeholder="e.g., certified drop protection, IPX rating, etc."></textarea>
+        </label>
+        <!-- Price range -->
+        <label class="block mt-4">What price range feels “fair” for a premium laptop bag that meets all your needs?
+          <select name="price_range" class="mt-1 w-full border rounded p-2" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Under $100</option>
+            <option>$100 – $149</option>
+            <option>$150 – $199</option>
+            <option>$200 – $249</option>
+            <option>$250 +</option>
+            <option>Price isn’t my main concern if quality is exceptional</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- E. Purchase Behaviour -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">E. Purchase Behaviour</legend>
+        <!-- Purchase venue -->
+        <label class="block">Where would you be most likely to purchase a premium laptop bag?
+          <select name="purchase_venue" class="mt-1 w-full border rounded p-2" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Brand’s own website</option>
+            <option>Amazon</option>
+            <option>Specialty tech retailer</option>
+            <option>High-end department store</option>
+            <option>Local boutique</option>
+            <option>Kickstarter / crowdfunding</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <!-- Early access interest -->
+        <label class="block">Would you be interested in early‑access pricing or beta‑testing a new protective laptop bag?</label>
+        <div class="flex space-x-4 mt-1">
+          <label class="flex items-center"><input type="radio" name="beta_interest" value="Yes" required class="mr-2">Yes</label>
+          <label class="flex items-center"><input type="radio" name="beta_interest" value="No" class="mr-2">No</label>
+        </div>
+      </fieldset>
+
+      <!-- F. Final Insight -->
+      <fieldset class="space-y-4">
+        <legend class="text-lg font-semibold mb-2">F. Final Insight</legend>
+        <label class="block">What ONE thing would make you instantly recommend a laptop bag to a colleague or friend?
+          <textarea name="recommendation_trigger" rows="3" class="mt-1 w-full border rounded p-2" placeholder="Your answer..."></textarea>
+        </label>
+      </fieldset>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow hover:bg-indigo-700">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
